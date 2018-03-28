@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.administrator.myapplication.MainActivity">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:layout_weight="1"
+    >
+    <TextView
+    android:id="@+id/startpoint"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:hint="请输入起点"
+    android:background="@null"
+    />
+    <TextView
+    android:id="@+id/endpoint"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:hint="请输入终点"
+    android:background="@null"
+    />
+    <Button
+    android:id="@+id/go"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:text="导航"
+    />
+    <Button
+        android:id="@+id/signame"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="点击签名"
+        />
+    <Button
+        android:id="@+id/routesearchbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="路线查询" />
+</LinearLayout>
+    <com.ustcinfo.mobile.platform.ability.jsbridge.BridgeWebView
+        android:id="@+id/web_view"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"></com.ustcinfo.mobile.platform.ability.jsbridge.BridgeWebView>
+</LinearLayout>
